@@ -1,0 +1,17 @@
+pyg = 'ay'
+
+print 'Welcome to the PygLatin translator'
+#getting raw data from user
+original = raw_input('Enter a word:')
+
+#making sure raw data does not have numbers and has value
+if len(original) > 0 and original.isalpha():
+    word = original.lower()  #make it lowercase
+    first=word[0]
+    new_word = word + first + pyg #adds the first letter of word and "ay" to input
+    new_word[1:len(new_word)] #slices the input
+    print "Original: " + original #shows original word
+    print "Translation: " + new_word[1:len(new_word)] # shows translation
+else:
+    print 'empty'
+    """###############################################zedd#############################################################"""
